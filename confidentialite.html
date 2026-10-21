@@ -1,0 +1,219 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Parmi le peuple · Confidentialité</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Lato:wght@400;700&family=Montserrat:wght@600;700&display=swap">
+<style>
+body { margin: 0; }
+[hidden] { display: none !important; }
+/* Layout: une colonne de lecture, bandeau bleu royal avec le titre doré, onglets de langue. */
+:root {
+  --bg: #f6f8fc;
+  --paper: #ffffff;
+  --ink: #0e1f3b;
+  --muted: #4d5b74;
+  --line: #dde4f0;
+  --royal: #1f4e99;
+  --gold: #b9831d;
+  --band: #1f4e99;
+  --band-ink: #fff4dc;
+  --font-display: "Cinzel", Georgia, "Times New Roman", serif;
+  --font-ui: "Montserrat", "Segoe UI", Arial, sans-serif;
+  --font-body: "Lato", "Segoe UI", Arial, sans-serif;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #0c1628; --paper: #13203a; --ink: #e8edf7; --muted: #a8b4cb; --line: #26365a;
+    --royal: #8fb3f0; --gold: #e9c46a; --band: #142f60; --band-ink: #fff4dc; color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #0c1628; --paper: #13203a; --ink: #e8edf7; --muted: #a8b4cb; --line: #26365a;
+  --royal: #8fb3f0; --gold: #e9c46a; --band: #142f60; --band-ink: #fff4dc; color-scheme: dark;
+}
+body { background: var(--bg); color: var(--ink); font: 16px/1.65 var(--font-body); }
+.band { background: var(--band); color: var(--band-ink); }
+.wrap {
+  max-width: 760px; margin: 0 auto;
+  padding-left: max(16px, env(safe-area-inset-left, 0px));
+  padding-right: max(16px, env(safe-area-inset-right, 0px));
+}
+.band .wrap { padding-block: 40px 28px; display: grid; gap: 10px; }
+.kicker { font: 600 12px var(--font-ui); letter-spacing: .18em; text-transform: uppercase; opacity: .85; }
+h1 { font: 700 clamp(28px, 6vw, 40px)/1.15 var(--font-display); margin: 0; text-wrap: balance; letter-spacing: .03em; }
+.band p { margin: 0; opacity: .9; }
+.tabs { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 12px; }
+.tabs button {
+  font: 600 13px var(--font-ui); padding: 7px 14px; border-radius: 999px; cursor: pointer;
+  border: 1.5px solid rgba(255, 244, 220, .55); background: transparent; color: var(--band-ink);
+}
+.tabs button[aria-selected="true"] { background: var(--band-ink); color: #1f4e99; border-color: var(--band-ink); }
+.tabs button:focus-visible { outline: 3px solid var(--gold); outline-offset: 2px; }
+main .wrap { padding-block: 28px 56px; }
+article { display: grid; gap: 22px; }
+section { display: grid; gap: 8px; min-width: 0; }
+h2 { font: 700 19px/1.3 var(--font-ui); color: var(--royal); margin: 0; text-wrap: balance; }
+p, li { margin: 0; max-width: 65ch; }
+ul { margin: 0; padding-left: 1.2em; display: grid; gap: 6px; }
+.box { background: var(--paper); border: 1px solid var(--line); border-radius: 14px; padding: 16px 18px; display: grid; gap: 8px; }
+.meta { font: 600 13px var(--font-ui); color: var(--muted); }
+a { color: var(--royal); }
+.contact { font-family: var(--font-ui); font-weight: 600; color: var(--gold); user-select: all; }
+footer { color: var(--muted); font-size: 14px; border-top: 1px solid var(--line); padding-top: 16px; }
+</style>
+</head>
+<body>
+
+<div class="band">
+  <div class="wrap">
+    <div class="kicker">Parmi le peuple</div>
+    <h1 id="title">Politique de confidentialité</h1>
+    <p id="intro">Jeu de société biblique à jouer sur un seul téléphone.</p>
+    <div class="tabs" role="tablist" aria-label="Langue">
+      <button role="tab" id="tab-fr" aria-selected="true" data-lang="fr">Français</button>
+      <button role="tab" id="tab-en" aria-selected="false" data-lang="en">English</button>
+    </div>
+  </div>
+</div>
+
+<main>
+  <div class="wrap">
+    <article lang="fr" data-lang="fr">
+      <p class="meta">En vigueur au 21 octobre 2026</p>
+      <section>
+        <h2>En résumé</h2>
+        <div class="box">
+          <ul>
+            <li>L’application ne demande ni compte, ni adresse e-mail, ni numéro de téléphone.</li>
+            <li>Les prénoms, le classement et les réglages restent sur ton téléphone. L’éditeur ne les reçoit jamais.</li>
+            <li>Des publicités sont affichées par Google AdMob, adaptées à un public familial et non personnalisées.</li>
+          </ul>
+        </div>
+      </section>
+      <section>
+        <h2>1. Qui sommes-nous</h2>
+        <p>« Parmi le peuple » est un jeu édité par un développeur indépendant (particulier). Pour toute question sur cette politique, écris à l’adresse indiquée dans la partie « Contact ».</p>
+      </section>
+      <section>
+        <h2>2. Ce qui est enregistré sur ton téléphone</h2>
+        <p>Pour que le jeu fonctionne, l’application garde sur l’appareil, et seulement sur l’appareil :</p>
+        <ul>
+          <li>les prénoms ou pseudos saisis pendant la distribution ;</li>
+          <li>le classement (points, victoires, parties jouées par pseudo) ;</li>
+          <li>la langue choisie, le mode de jeu et le nombre de joueurs ;</li>
+          <li>la liste des paires de mots déjà jouées, pour éviter de les répéter.</li>
+        </ul>
+        <p>Ces informations ne sont pas envoyées à l’éditeur ni à des tiers. Tu peux les effacer à tout moment dans Paramètres (« Effacer le classement », « Effacer les prénoms enregistrés ») ou en désinstallant l’application.</p>
+      </section>
+      <section>
+        <h2>3. Publicité (Google AdMob)</h2>
+        <p>L’application affiche des publicités fournies par Google AdMob. Pour afficher et mesurer ces publicités et lutter contre la fraude, Google peut traiter des données techniques : identifiant publicitaire de l’appareil, adresse IP, type d’appareil et de système, informations sur l’application et interactions avec les publicités.</p>
+        <p>Comme le jeu s’adresse aussi aux enfants, les demandes de publicité sont signalées à Google comme destinées à un public d’enfants : les publicités ne sont pas personnalisées et leur contenu est limité au tout public.</p>
+        <p>Pour en savoir plus : <a href="https://policies.google.com/technologies/partner-sites" target="_blank" rel="noopener">comment Google utilise les données des applications partenaires</a>. Tu peux réinitialiser ou supprimer ton identifiant publicitaire dans les paramètres Android (Google › Annonces).</p>
+      </section>
+      <section>
+        <h2>4. Services techniques de Google (Firebase)</h2>
+        <p>L’application utilise des services Firebase de Google pour son fonctionnement technique, par exemple la mesure des performances (temps de démarrage, modèle d’appareil). Ces données sont techniques, ne contiennent pas les prénoms saisis dans le jeu et servent uniquement à faire fonctionner et à améliorer l’application.</p>
+      </section>
+      <section>
+        <h2>5. Enfants</h2>
+        <p>L’éditeur ne collecte aucune donnée personnelle sur les enfants. Les prénoms saisis restent sur l’appareil. Un parent peut effacer ces informations depuis les Paramètres ou nous contacter pour toute question.</p>
+      </section>
+      <section>
+        <h2>6. Tes droits</h2>
+        <p>Conformément au RGPD, tu disposes d’un droit d’accès, de rectification, d’effacement et d’opposition. Les données du jeu étant stockées uniquement sur ton appareil, tu les contrôles directement. Pour les données traitées par Google, consulte les paramètres de ton compte Google ou <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">la politique de confidentialité de Google</a>. Tu peux aussi saisir la CNIL (cnil.fr).</p>
+      </section>
+      <section>
+        <h2>7. Modifications</h2>
+        <p>Cette politique peut évoluer avec l’application. La date en haut de la page indique la dernière mise à jour.</p>
+      </section>
+      <section>
+        <h2>8. Contact</h2>
+        <p>Adresse de contact : <span class="contact">seraaphcompany@gmail.com</span></p>
+      </section>
+    </article>
+
+    <article lang="en" data-lang="en" hidden>
+      <p class="meta">Effective 21 October 2026</p>
+      <section>
+        <h2>Summary</h2>
+        <div class="box">
+          <ul>
+            <li>The app asks for no account, email address or phone number.</li>
+            <li>Names, leaderboard and settings stay on your phone. The developer never receives them.</li>
+            <li>Ads are shown by Google AdMob, family-friendly and non-personalised.</li>
+          </ul>
+        </div>
+      </section>
+      <section>
+        <h2>1. Who we are</h2>
+        <p>“Parmi le peuple” (Among the People) is a game published by an independent developer (an individual). For any question about this policy, write to the address given under “Contact”.</p>
+      </section>
+      <section>
+        <h2>2. What is stored on your phone</h2>
+        <p>For the game to work, the app keeps on the device, and only on the device:</p>
+        <ul>
+          <li>the names or nicknames typed during the deal;</li>
+          <li>the leaderboard (points, wins and games played per nickname);</li>
+          <li>the chosen language, game mode and number of players;</li>
+          <li>the list of word pairs already played, so they are not repeated.</li>
+        </ul>
+        <p>This information is not sent to the developer or to third parties. You can delete it at any time in Settings (“Reset leaderboard”, “Clear saved names”) or by uninstalling the app.</p>
+      </section>
+      <section>
+        <h2>3. Advertising (Google AdMob)</h2>
+        <p>The app shows ads provided by Google AdMob. To serve and measure these ads and to prevent fraud, Google may process technical data: the device’s advertising ID, IP address, device and system type, app information and interactions with ads.</p>
+        <p>Because the game is also aimed at children, ad requests are flagged to Google as child-directed: ads are not personalised and their content is limited to general audiences.</p>
+        <p>Learn more: <a href="https://policies.google.com/technologies/partner-sites" target="_blank" rel="noopener">how Google uses information from partner apps</a>. You can reset or delete your advertising ID in Android settings (Google › Ads).</p>
+      </section>
+      <section>
+        <h2>4. Google technical services (Firebase)</h2>
+        <p>The app uses Google Firebase services for its technical operation, such as performance monitoring (start-up time, device model). This data is technical, does not contain the names typed in the game, and is used only to run and improve the app.</p>
+      </section>
+      <section>
+        <h2>5. Children</h2>
+        <p>The developer collects no personal data about children. Names typed in the game stay on the device. A parent can delete this information from Settings or contact us with any question.</p>
+      </section>
+      <section>
+        <h2>6. Your rights</h2>
+        <p>Under the GDPR you have the right to access, correct, erase and object. As the game data is stored only on your device, you control it directly. For data processed by Google, see your Google account settings or <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google’s privacy policy</a>.</p>
+      </section>
+      <section>
+        <h2>7. Changes</h2>
+        <p>This policy may change with the app. The date at the top of the page shows the latest update.</p>
+      </section>
+      <section>
+        <h2>8. Contact</h2>
+        <p>Contact address: <span class="contact">seraaphcompany@gmail.com</span></p>
+      </section>
+    </article>
+
+    <footer>Parmi le peuple · Entre el pueblo · Entre o povo · Among the People</footer>
+  </div>
+</main>
+
+<script>
+(function () {
+  var texts = {
+    fr: { title: 'Politique de confidentialité', intro: 'Jeu de société biblique à jouer sur un seul téléphone.' },
+    en: { title: 'Privacy Policy', intro: 'A Bible party game played on a single phone.' }
+  };
+  var tabs = document.querySelectorAll('.tabs button');
+  var articles = document.querySelectorAll('article');
+  function show(lang) {
+    tabs.forEach(function (b) { b.setAttribute('aria-selected', b.dataset.lang === lang ? 'true' : 'false'); });
+    articles.forEach(function (a) { a.hidden = a.dataset.lang !== lang; });
+    document.getElementById('title').textContent = texts[lang].title;
+    document.getElementById('intro').textContent = texts[lang].intro;
+    document.documentElement.lang = lang;
+  }
+  tabs.forEach(function (b) { b.addEventListener('click', function () { show(b.dataset.lang); }); });
+  var start = (location.hash || '').replace('#', '');
+  if (start === 'en') show('en');
+})();
+</script>
+
+</body>
+</html>
