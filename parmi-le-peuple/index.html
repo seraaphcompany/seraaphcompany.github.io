@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Parmi le peuple</title>
+<meta name="description" content="Parmi le peuple : un jeu de bluff et de discernement autour de la Bible, à jouer entre amis sur un seul téléphone.">
+<link rel="icon" href="icone.png">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=Lato:wght@400;700&family=Montserrat:wght@600&display=swap">
+<style>
+:root {
+  --sky-top: #3270cf; --sky: #1f4e99; --sky-deep: #123570;
+  --gold: #e9c46a; --cream: #fff4dc; --ink: #0e1f3b; --muted: #4d5b74; --paper: #ffffff; --bg: #f6f8fc;
+}
+@media (prefers-color-scheme: dark) {
+  :root { --paper: #13203a; --bg: #0c1628; --ink: #e8edf7; --muted: #a8b4cb; color-scheme: dark; }
+}
+body { margin: 0; background: var(--bg); color: var(--ink); font: 16px/1.6 "Lato", "Segoe UI", Arial, sans-serif; }
+.hero {
+  background: linear-gradient(var(--sky-top), var(--sky) 55%, var(--sky-deep));
+  color: var(--cream); text-align: center; padding: 48px 16px 40px;
+}
+.hero img { width: 112px; height: 112px; border-radius: 26px; box-shadow: 0 8px 24px rgba(0,0,0,.35); }
+.kicker { font: 600 13px "Montserrat", Arial, sans-serif; letter-spacing: .3em; text-transform: uppercase; margin-top: 18px; }
+h1 { font: 700 clamp(36px, 9vw, 56px)/1.05 "Cinzel", Georgia, serif; color: var(--gold); margin: 4px 0 12px; letter-spacing: .04em; }
+.hero p { max-width: 34em; margin: 0 auto; opacity: .92; }
+main { max-width: 720px; margin: 0 auto; padding: 32px 16px 56px; display: grid; gap: 18px; }
+.card { background: var(--paper); border-radius: 18px; padding: 18px 20px; box-shadow: 0 4px 16px rgba(14,31,59,.08); }
+h2 { font: 600 18px "Montserrat", Arial, sans-serif; margin: 0 0 6px; color: #1f4e99; }
+@media (prefers-color-scheme: dark) { h2 { color: #8fb3f0; } }
+.card p { margin: 0; color: var(--muted); }
+footer { text-align: center; color: var(--muted); font-size: 14px; }
+footer a { color: inherit; }
+</style>
+</head>
+<body>
+<header class="hero">
+  <img src="icone.png" alt="Icône de Parmi le peuple : une croix dorée dans un médaillon">
+  <div class="kicker">Parmi le</div>
+  <h1>Peuple</h1>
+  <p>Un jeu de bluff et de discernement autour de la Bible, à jouer entre amis ou en famille sur un seul téléphone.</p>
+</header>
+<main>
+  <div class="card">
+    <h2>Le peuple, les Boucs et le Loup ravisseur</h2>
+    <p>Le peuple reçoit tous le même mot biblique. Les Boucs reçoivent un mot proche sans le savoir (Matthieu 25:32-33), et le Loup ravisseur n’en reçoit aucun (Matthieu 7:15). À vous de les démasquer !</p>
+  </div>
+  <div class="card">
+    <h2>Trois modes, quatre langues</h2>
+    <p>Enfant, Classique et Avancé : plus de 200 paires de mots, avec un « Le savais-tu ? » biblique en fin de partie. En français, anglais, espagnol et portugais.</p>
+  </div>
+  <footer>
+    <p><a href="confidentialite.html">Politique de confidentialité</a> · Contact : seraaphcompany@gmail.com</p>
+  </footer>
+</main>
+</body>
+</html>
