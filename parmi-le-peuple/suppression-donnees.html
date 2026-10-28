@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Parmi le peuple · Suppression des données</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=Lato:wght@400;700&family=Montserrat:wght@600;700&display=swap">
+<style>
+body { margin: 0; }
+[hidden] { display: none !important; }
+/* Même présentation que la politique de confidentialité : bandeau bleu, une colonne de lecture. */
+:root {
+  --bg: #f6f8fc; --paper: #ffffff; --ink: #0e1f3b; --muted: #4d5b74; --line: #dde4f0;
+  --royal: #1f4e99; --gold: #b9831d; --band: #1f4e99; --band-ink: #fff4dc;
+  --font-display: "Cinzel", Georgia, serif;
+  --font-ui: "Montserrat", "Segoe UI", Arial, sans-serif;
+  --font-body: "Lato", "Segoe UI", Arial, sans-serif;
+}
+@media (prefers-color-scheme: dark) {
+  :root { --bg: #0c1628; --paper: #13203a; --ink: #e8edf7; --muted: #a8b4cb; --line: #26365a; --royal: #8fb3f0; --gold: #e9c46a; --band: #142f60; color-scheme: dark; }
+}
+body { background: var(--bg); color: var(--ink); font: 16px/1.65 var(--font-body); }
+.band { background: var(--band); color: var(--band-ink); }
+.wrap { max-width: 760px; margin: 0 auto; padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); }
+.band .wrap { padding-block: 40px 28px; display: grid; gap: 10px; }
+.kicker { font: 600 12px var(--font-ui); letter-spacing: .18em; text-transform: uppercase; opacity: .85; }
+h1 { font: 700 clamp(26px, 6vw, 38px)/1.15 var(--font-display); margin: 0; letter-spacing: .03em; text-wrap: balance; }
+.band p { margin: 0; opacity: .9; }
+.tabs { display: flex; gap: 8px; margin-top: 12px; }
+.tabs button { font: 600 13px var(--font-ui); padding: 7px 14px; border-radius: 999px; cursor: pointer; border: 1.5px solid rgba(255, 244, 220, .55); background: transparent; color: var(--band-ink); }
+.tabs button[aria-selected="true"] { background: var(--band-ink); color: #1f4e99; border-color: var(--band-ink); }
+.tabs button:focus-visible { outline: 3px solid var(--gold); outline-offset: 2px; }
+main .wrap { padding-block: 28px 56px; }
+article { display: grid; gap: 22px; }
+section { display: grid; gap: 8px; }
+h2 { font: 700 19px/1.3 var(--font-ui); color: var(--royal); margin: 0; }
+p, li { margin: 0; max-width: 65ch; }
+ol, ul { margin: 0; padding-left: 1.3em; display: grid; gap: 6px; }
+.box { background: var(--paper); border: 1px solid var(--line); border-radius: 14px; padding: 16px 18px; display: grid; gap: 8px; }
+.contact { font-family: var(--font-ui); font-weight: 700; color: var(--gold); user-select: all; }
+a { color: var(--royal); }
+footer { color: var(--muted); font-size: 14px; border-top: 1px solid var(--line); padding-top: 16px; }
+</style>
+</head>
+<body>
+<div class="band">
+  <div class="wrap">
+    <div class="kicker">Parmi le peuple</div>
+    <h1 id="title">Supprimer vos données</h1>
+    <p id="intro">Le jeu ne demande aucun compte. Voici comment effacer ce qu’il garde et comment nous écrire.</p>
+    <div class="tabs" role="tablist" aria-label="Langue">
+      <button role="tab" id="tab-fr" aria-selected="true" data-lang="fr">Français</button>
+      <button role="tab" id="tab-en" aria-selected="false" data-lang="en">English</button>
+    </div>
+  </div>
+</div>
+
+<main>
+  <div class="wrap">
+    <article lang="fr" data-lang="fr">
+      <section>
+        <h2>1. Les données du jeu sur votre téléphone</h2>
+        <p>Les prénoms saisis, le classement, les réglages et la liste des paires déjà jouées restent uniquement sur votre appareil. Pour les effacer :</p>
+        <div class="box">
+          <ol>
+            <li>Ouvrez Parmi le peuple et touchez l’icône des Paramètres (roue dentée) sur l’accueil.</li>
+            <li>Touchez « Effacer le classement », puis « Effacer les prénoms enregistrés ».</li>
+            <li>Pour tout effacer d’un coup, désinstallez l’application.</li>
+          </ol>
+        </div>
+      </section>
+      <section>
+        <h2>2. Les données publicitaires (Google AdMob)</h2>
+        <p>Les publicités sont fournies par Google AdMob, qui peut traiter l’identifiant publicitaire de l’appareil et des données techniques. Vous pouvez réinitialiser ou supprimer cet identifiant dans les paramètres Android : Paramètres › Google › Annonces. Pour les autres données traitées par Google, consultez <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">la politique de confidentialité de Google</a>.</p>
+      </section>
+      <section>
+        <h2>3. Demander la suppression par e-mail</h2>
+        <p>Pour toute autre demande de suppression ou question sur vos données, écrivez-nous en indiquant « Suppression de données – Parmi le peuple » en objet :</p>
+        <p class="contact">seraaphcompany@gmail.com</p>
+        <p>Nous répondons sous 30 jours. Comme le jeu n’a pas de compte et ne nous envoie pas les données de jeu, nous n’en conservons aucune de notre côté.</p>
+      </section>
+      <footer>Voir aussi la <a href="confidentialite.html">politique de confidentialité</a>.</footer>
+    </article>
+
+    <article lang="en" data-lang="en" hidden>
+      <section>
+        <h2>1. Game data on your phone</h2>
+        <p>The names you type, the leaderboard, the settings and the list of word pairs already played stay only on your device. To delete them:</p>
+        <div class="box">
+          <ol>
+            <li>Open Among the People and tap the Settings icon (gear) on the home screen.</li>
+            <li>Tap “Reset leaderboard”, then “Clear saved names”.</li>
+            <li>To delete everything at once, uninstall the app.</li>
+          </ol>
+        </div>
+      </section>
+      <section>
+        <h2>2. Advertising data (Google AdMob)</h2>
+        <p>Ads are provided by Google AdMob, which may process the device’s advertising ID and technical data. You can reset or delete this ID in Android settings: Settings › Google › Ads. For other data processed by Google, see <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google’s privacy policy</a>.</p>
+      </section>
+      <section>
+        <h2>3. Request deletion by email</h2>
+        <p>For any other deletion request or question about your data, write to us with “Data deletion – Parmi le peuple” as the subject:</p>
+        <p class="contact">seraaphcompany@gmail.com</p>
+        <p>We reply within 30 days. As the game has no account and does not send us game data, we keep none on our side.</p>
+      </section>
+      <footer>See also the <a href="confidentialite.html#en">privacy policy</a>.</footer>
+    </article>
+  </div>
+</main>
+
+<script>
+(function () {
+  var texts = {
+    fr: { title: 'Supprimer vos données', intro: 'Le jeu ne demande aucun compte. Voici comment effacer ce qu’il garde et comment nous écrire.' },
+    en: { title: 'Delete your data', intro: 'The game needs no account. Here is how to erase what it keeps and how to contact us.' }
+  };
+  var tabs = document.querySelectorAll('.tabs button');
+  var articles = document.querySelectorAll('article');
+  function show(lang) {
+    tabs.forEach(function (b) { b.setAttribute('aria-selected', b.dataset.lang === lang ? 'true' : 'false'); });
+    articles.forEach(function (a) { a.hidden = a.dataset.lang !== lang; });
+    document.getElementById('title').textContent = texts[lang].title;
+    document.getElementById('intro').textContent = texts[lang].intro;
+    document.documentElement.lang = lang;
+  }
+  tabs.forEach(function (b) { b.addEventListener('click', function () { show(b.dataset.lang); }); });
+  if ((location.hash || '').replace('#', '') === 'en') show('en');
+})();
+</script>
+</body>
+</html>
